@@ -1,0 +1,970 @@
+<!DOCTYPE html>
+<html lang="en" class="dark-mode">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Ibrahim Mabrouk - Elite Portfolio. Petroleum Geophysicist student bridging Geoscience with Programming, Machine Learning, and AI.">
+    <title>Ibrahim Mabrouk | Petroleum Geophysicist & AI Innovator</title>
+    
+    <!-- Premium Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Main Style Sheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Dynamic Custom Cursor -->
+    <div id="custom-cursor"></div>
+    <div id="custom-cursor-glow"></div>
+
+    <!-- Interactive Ambient Glow Grid -->
+    <div class="ambient-glow-wrapper">
+        <div class="glow-orb orb-1"></div>
+        <div class="glow-orb orb-2"></div>
+        <div class="glow-orb orb-3"></div>
+    </div>
+
+    <!-- Premium Loader Screen -->
+    <div id="loader">
+        <div class="loader-content">
+            <div class="loader-logo">
+                <span class="logo-txt">IM</span>
+                <span class="logo-dot"></span>
+            </div>
+            <div class="loader-bar-bg">
+                <div class="loader-bar-progress"></div>
+            </div>
+            <div class="loader-status">INITIALIZING SEISMIC STREAM...</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#home" class="nav-logo" data-magnetic>
+                <span class="logo-accent">IBRAHIM</span>MABROUK
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#journey" class="nav-link">Journey</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#contact" class="btn btn-nav" data-magnetic>Let's Talk <i class="fa-solid fa-arrow-right-long"></i></a>
+                <button class="mobile-toggle" aria-label="Toggle Menu">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Scroll Progress Indicator -->
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar"></div>
+    </div>
+
+    <main id="smooth-wrapper">
+        <div id="smooth-content">
+
+            <!-- HERO SECTION -->
+            <section id="home" class="hero-section">
+                <!-- Interactive Seismic Canvas -->
+                <canvas id="seismic-canvas"></canvas>
+                
+                <div class="hero-container container">
+                    <div class="hero-text-col">
+                        <div class="badge hero-badge">
+                            <span class="badge-dot"></span> Available for Research & Internships
+                        </div>
+                        
+                        <h1 class="hero-name">
+                            <span class="text-glow">IBRAHIM</span><br>
+                            <span class="text-gradient">MABROUK</span>
+                        </h1>
+
+                        <div class="hero-title-scroller">
+                            <span class="title-item">Future Petroleum Geophysicist</span>
+                            <span class="title-item">Geoscientist & Programmer</span>
+                            <span class="title-item">AI / Machine Learning Engineer</span>
+                        </div>
+
+                        <p class="hero-desc">
+                            Bridging traditional geoscience with state-of-the-art computational workflows. Leveraging high-resolution petrophysics, automated 3D seismic interpretation, and intelligent neural networks to pioneer the future of subsurface exploration.
+                        </p>
+
+                        <div class="hero-actions">
+                            <a href="#projects" class="btn btn-primary" data-magnetic>
+                                Explore Projects <i class="fa-solid fa-compass"></i>
+                            </a>
+                            <a href="PLACEHOLDER_CV_URL" class="btn btn-secondary" target="_blank" data-magnetic>
+                                Download CV <i class="fa-solid fa-arrow-down-to-line"></i>
+                            </a>
+                        </div>
+
+                        <div class="hero-socials">
+                            <span class="socials-label">Connect:</span>
+                            <div class="social-links">
+                                <a href="PLACEHOLDER_LINKEDIN_URL" target="_blank" class="social-icon" data-magnetic title="LinkedIn">
+                                    <i class="fa-brands fa-linkedin-in"></i>
+                                </a>
+                                <a href="PLACEHOLDER_GITHUB_URL" target="_blank" class="social-icon" data-magnetic title="GitHub">
+                                    <i class="fa-brands fa-github"></i>
+                                </a>
+                                <a href="PLACEHOLDER_WHATSAPP_URL" target="_blank" class="social-icon" data-magnetic title="WhatsApp">
+                                    <i class="fa-brands fa-whatsapp"></i>
+                                </a>
+                                <a href="mailto:PLACEHOLDER_EMAIL@gmail.com" class="social-icon" data-magnetic title="Email">
+                                    <i class="fa-regular fa-envelope"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="hero-visual-col">
+                        <div class="profile-container">
+                            <div class="profile-glow"></div>
+                            <div class="profile-card">
+                                <!-- Profile Image Placeholder -->
+                                <img src="PLACEHOLDER_PROFILE_IMAGE.jpg" alt="Ibrahim Mabrouk" class="profile-img">
+                                <div class="profile-overlay"></div>
+                                
+                                <div class="profile-data">
+                                    <div class="data-row">
+                                        <span class="data-label">Status</span>
+                                        <span class="data-val text-cyan">Geophysics Student</span>
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Affiliation</span>
+                                        <span class="data-val">Al-Azhar University</span>
+                                    </div>
+                                    <div class="data-row">
+                                        <span class="data-label">Focus</span>
+                                        <span class="data-val">Reservoir Characterization</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Custom Mouse & Scroll Indicator -->
+                <div class="scroll-indicator">
+                    <span class="scroll-wheel"></span>
+                    <span class="scroll-text">Scroll Down</span>
+                </div>
+            </section>
+
+            <!-- ABOUT SECTION -->
+            <section id="about" class="about-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">01 / DISCOVERY</span>
+                        <h2 class="section-title">The Geoscientist of Tomorrow</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="about-grid">
+                        <div class="about-text-wrapper reveal-slide-up">
+                            <h3 class="about-subtitle">Pioneering Next-Generation Subsurface Workflows</h3>
+                            <p class="about-paragraph">
+                                I am Ibrahim Mabrouk, currently studying Geophysics at the Faculty of Science, Al-Azhar University. Passionate about uncovering the complexities hidden beneath the Earth's surface, I am positioning myself at the critical intersection of <strong>Exploration Geophysics</strong> and <strong>Digital Technology</strong>.
+                            </p>
+                            <p class="about-paragraph">
+                                In today's energy landscape, interpretation is no longer just manual. The future of seismic interpretation, well log analysis, and reservoir modeling relies heavily on processing massive datasets, constructing predictive algorithms, and generating precise geological simulations.
+                            </p>
+                            <p class="about-paragraph">
+                                Utilizing tools like <strong>Petrel</strong>, <strong>ArcGIS Pro</strong>, and engineering robust codes in <strong>Python</strong>, I strive to unlock insights, optimize workflows, and integrate AI/ML into seismic mapping and reservoir characterization. I represent ambition, systematic learning, and modern scientific expertise.
+                            </p>
+                        </div>
+
+                        <div class="about-highlights-wrapper">
+                            <div class="highlight-card reveal-slide-up" data-delay="0.1">
+                                <div class="card-icon"><i class="fa-solid fa-wave-square"></i></div>
+                                <h4>Deep Exploration</h4>
+                                <p>Specialized interest in seismic wave analysis, 3D structural mapping, and precise well correlation.</p>
+                            </div>
+
+                            <div class="highlight-card reveal-slide-up" data-delay="0.2">
+                                <div class="card-icon"><i class="fa-solid fa-code"></i></div>
+                                <h4>Geocomputation</h4>
+                                <p>Automating redundant analytical pipelines using Python, libraries like Pandas, NumPy, and TensorFlow.</p>
+                            </div>
+
+                            <div class="highlight-card reveal-slide-up" data-delay="0.3">
+                                <div class="card-icon"><i class="fa-solid fa-network-wired"></i></div>
+                                <h4>Intelligent Reservoirs</h4>
+                                <p>Leveraging artificial neural networks for synthetic seismograms and high-resolution well log prediction.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- EDUCATION SECTION -->
+            <section id="education" class="education-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">02 / ACADEMICS</span>
+                        <h2 class="section-title">Academic Background</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+
+                        <!-- Timeline Item 1 -->
+                        <div class="timeline-item reveal-slide-up">
+                            <div class="timeline-dot-wrapper">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content card-glass">
+                                <span class="timeline-date">2022 - Present</span>
+                                <h3 class="timeline-title">B.Sc. in Geophysics</h3>
+                                <h4 class="timeline-institution text-gradient">Faculty of Science, Al-Azhar University</h4>
+                                <p class="timeline-desc">
+                                    Deep diving into advanced geosciences, structural modeling, and reservoir physics. Dedicated to modern methodology and application of advanced physics principles to earth structures.
+                                </p>
+                                <div class="education-core-courses">
+                                    <span class="course-badge">Seismic Exploration</span>
+                                    <span class="course-badge">Well Logging & Petrophysics</span>
+                                    <span class="course-badge">Structural Geology</span>
+                                    <span class="course-badge">Petroleum Geology</span>
+                                    <span class="course-badge">Gravity & Magnetic Methods</span>
+                                    <span class="course-badge">Stratigraphy</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Timeline Item 2 -->
+                        <div class="timeline-item reveal-slide-up" data-delay="0.2">
+                            <div class="timeline-dot-wrapper">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content card-glass">
+                                <span class="timeline-date">2024 - 2025</span>
+                                <h3 class="timeline-title">Computational Geophysics Core Program</h3>
+                                <h4 class="timeline-institution text-gradient">Self-Directed Intensive Study</h4>
+                                <p class="timeline-desc">
+                                    Integrating Python libraries for geoscience dataset extraction, predictive rock physics modeling, and automating GIS spatial analyses.
+                                </p>
+                                <div class="education-core-courses">
+                                    <span class="course-badge">NumPy & Pandas for Logs</span>
+                                    <span class="course-badge">Machine Learning Pipelines</span>
+                                    <span class="course-badge">PyRockPhysics Basics</span>
+                                    <span class="course-badge">Spatial Analysis API</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- SKILLS SECTION -->
+            <section id="skills" class="skills-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">03 / CAPABILITIES</span>
+                        <h2 class="section-title">Core Expertise & Skills</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="skills-grid">
+                        
+                        <!-- Skill Box 1 -->
+                        <div class="skill-card card-glass reveal-slide-up" data-delay="0.1">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="fa-solid fa-layer-group text-cyan"></i></div>
+                                <h3 class="skill-title">Petrel (Schlumberger)</h3>
+                            </div>
+                            <p class="skill-desc">Seismic interpretation, well correlation, and construction of high-fidelity 3D structural frameworks.</p>
+                            <div class="skill-progress-wrap">
+                                <div class="skill-progress-bar" style="width: 85%;"></div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill Box 2 -->
+                        <div class="skill-card card-glass reveal-slide-up" data-delay="0.2">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="fa-solid fa-file-waveform text-cyan"></i></div>
+                                <h3 class="skill-title">Well Log Interpretation</h3>
+                            </div>
+                            <p class="skill-desc">Interpreting gamma ray, resistivity, density, and neutron logs to calculate lithology, porosity, and fluid saturation.</p>
+                            <div class="skill-progress-wrap">
+                                <div class="skill-progress-bar" style="width: 90%;"></div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill Box 3 -->
+                        <div class="skill-card card-glass reveal-slide-up" data-delay="0.3">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="fa-solid fa-chart-line text-cyan"></i></div>
+                                <h3 class="skill-title">Synthetic Seismogram</h3>
+                            </div>
+                            <p class="skill-desc">Generating synthetic seismograms using sonic and density curves to calibrate seismic horizons with absolute well depth.</p>
+                            <div class="skill-progress-wrap">
+                                <div class="skill-progress-bar" style="width: 80%;"></div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill Box 4 -->
+                        <div class="skill-card card-glass reveal-slide-up" data-delay="0.1">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="fa-brands fa-python text-cyan"></i></div>
+                                <h3 class="skill-title">Python Automation</h3>
+                            </div>
+                            <p class="skill-desc">Developing custom scripts for raw LAS file parsing, automatic marker detections, and batch geological plots.</p>
+                            <div class="skill-progress-wrap">
+                                <div class="skill-progress-bar" style="width: 85%;"></div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill Box 5 -->
+                        <div class="skill-card card-glass reveal-slide-up" data-delay="0.2">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="fa-solid fa-brain text-cyan"></i></div>
+                                <h3 class="skill-title">AI & Machine Learning</h3>
+                            </div>
+                            <p class="skill-desc">Utilizing supervised ML (Random Forest, XGBoost) to classify rock facies and fill gaps in historical log parameters.</p>
+                            <div class="skill-progress-wrap">
+                                <div class="skill-progress-bar" style="width: 75%;"></div>
+                                <span class="skill-percent">75%</span>
+                            </div>
+                        </div>
+
+                        <!-- Skill Box 6 -->
+                        <div class="skill-card card-glass reveal-slide-up" data-delay="0.3">
+                            <div class="skill-header">
+                                <div class="skill-icon"><i class="fa-solid fa-earth-americas text-cyan"></i></div>
+                                <h3 class="skill-title">ArcGIS Pro & GIS</h3>
+                            </div>
+                            <p class="skill-desc">Compiling complex coordinate data, structural contour maps, and digital elevation models for geographic assessments.</p>
+                            <div class="skill-progress-wrap">
+                                <div class="skill-progress-bar" style="width: 80%;"></div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- Soft/Professional skills marquee/row -->
+                    <div class="soft-skills-container reveal-slide-up">
+                        <div class="soft-skill-tag"><i class="fa-solid fa-puzzle-piece"></i> Analytical Problem Solving</div>
+                        <div class="soft-skill-tag"><i class="fa-solid fa-users"></i> Team Leadership</div>
+                        <div class="soft-skill-tag"><i class="fa-solid fa-comments"></i> Clear Technical Communication</div>
+                        <div class="soft-skill-tag"><i class="fa-solid fa-compass-drafting"></i> Critical Thinking</div>
+                        <div class="soft-skill-tag"><i class="fa-solid fa-gears"></i> Continuous Learning</div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- PROJECTS SECTION -->
+            <section id="projects" class="projects-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">04 / CREATIONS</span>
+                        <h2 class="section-title">Innovative Projects</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <!-- Filter Navigation -->
+                    <div class="filter-wrapper reveal-slide-up">
+                        <button class="filter-btn active" data-filter="all">All Projects</button>
+                        <button class="filter-btn" data-filter="geophysics">Geophysics & Petrel</button>
+                        <button class="filter-btn" data-filter="python">Python & AI</button>
+                        <button class="filter-btn" data-filter="gis">GIS & Mapping</button>
+                    </div>
+
+                    <!-- Projects Grid -->
+                    <div class="projects-grid">
+                        
+                        <!-- Project 1: Petrel Well Correlation -->
+                        <div class="project-item card-glass reveal-slide-up" data-category="geophysics">
+                            <div class="project-img-wrapper">
+                                <img src="PLACEHOLDER_PROJECT_1_IMAGE.jpg" alt="Petrel Well Correlation" class="project-img">
+                                <div class="project-hover-overlay">
+                                    <button class="btn btn-lightbox" data-image="PLACEHOLDER_PROJECT_1_IMAGE.jpg"><i class="fa-solid fa-expand"></i> View Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Subsurface Mapping</span>
+                                <h3 class="project-title">Petrel Well Correlation & Top Analysis</h3>
+                                <p class="project-desc">Established high-resolution regional correlations across complex structural fault blocks. Picked formation tops and analyzed zone thickness variations using deep petrophysical profiles.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Petrel</span>
+                                    <span class="tech-tag">Log Calibration</span>
+                                    <span class="tech-tag">Seismic Stratigraphy</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="PLACEHOLDER_GITHUB_URL" class="btn-project-link" target="_blank"><i class="fa-brands fa-github"></i> Details</a>
+                                    <a href="#" class="btn-project-link disabled" onclick="return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 2: Well Log Interpretation Tool -->
+                        <div class="project-item card-glass reveal-slide-up" data-category="python">
+                            <div class="project-img-wrapper">
+                                <img src="PLACEHOLDER_PROJECT_2_IMAGE.jpg" alt="Well Log Interpretation Software" class="project-img">
+                                <div class="project-hover-overlay">
+                                    <button class="btn btn-lightbox" data-image="PLACEHOLDER_PROJECT_2_IMAGE.jpg"><i class="fa-solid fa-expand"></i> View Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Automated Analysis</span>
+                                <h3 class="project-title">Automated Lithology & Log Calculator</h3>
+                                <p class="project-desc">Developed an automated python-based utility reading LAS files, running Archie and Simandoux equations to calculate volume of shale, porosity, and water saturation parameters automatically.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">Pandas</span>
+                                    <span class="tech-tag">Lasio</span>
+                                    <span class="tech-tag">Matplotlib</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="PLACEHOLDER_GITHUB_URL" class="btn-project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="#" class="btn-project-link" target="_blank"><i class="fa-solid fa-play"></i> Run App</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 3: Synthetic Seismogram Generator -->
+                        <div class="project-item card-glass reveal-slide-up" data-category="geophysics">
+                            <div class="project-img-wrapper">
+                                <img src="PLACEHOLDER_PROJECT_3_IMAGE.jpg" alt="Synthetic Seismogram Calibration" class="project-img">
+                                <div class="project-hover-overlay">
+                                    <button class="btn btn-lightbox" data-image="PLACEHOLDER_PROJECT_3_IMAGE.jpg"><i class="fa-solid fa-expand"></i> View Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Calibration Workflow</span>
+                                <h3 class="project-title">Well-to-Seismic Tie Modeling</h3>
+                                <p class="project-desc">Constructed customized synthetic traces from calculated acoustic impedance. Correlated derived synthetic markers with actual zero-phase 3D seismic volumes for maximum accuracy mapping.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Synthetic Modeling</span>
+                                    <span class="tech-tag">Petrel</span>
+                                    <span class="tech-tag">Seismic Tie</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="PLACEHOLDER_GITHUB_URL" class="btn-project-link" target="_blank"><i class="fa-brands fa-github"></i> Details</a>
+                                    <a href="#" class="btn-project-link disabled" onclick="return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 4: AI Facies Classification -->
+                        <div class="project-item card-glass reveal-slide-up" data-category="python">
+                            <div class="project-img-wrapper">
+                                <img src="PLACEHOLDER_PROJECT_4_IMAGE.jpg" alt="AI Facies Classifier" class="project-img">
+                                <div class="project-hover-overlay">
+                                    <button class="btn btn-lightbox" data-image="PLACEHOLDER_PROJECT_4_IMAGE.jpg"><i class="fa-solid fa-expand"></i> View Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Machine Learning</span>
+                                <h3 class="project-title">Lithofacies Prediction Engine</h3>
+                                <p class="project-desc">Created a predictive ML pipeline utilizing XGBoost models to identify core sand and shale intervals based solely on raw Sonic and Density log features, optimizing manual sorting tasks.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">Scikit-Learn</span>
+                                    <span class="tech-tag">XGBoost</span>
+                                    <span class="tech-tag">Predictive Rock Physics</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="PLACEHOLDER_GITHUB_URL" class="btn-project-link" target="_blank"><i class="fa-brands fa-github"></i> GitHub</a>
+                                    <a href="#" class="btn-project-link" target="_blank"><i class="fa-solid fa-chart-line"></i> Predict API</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 5: GIS Mapping -->
+                        <div class="project-item card-glass reveal-slide-up" data-category="gis">
+                            <div class="project-img-wrapper">
+                                <img src="PLACEHOLDER_PROJECT_5_IMAGE.jpg" alt="ArcGIS Structural Contour Map" class="project-img">
+                                <div class="project-hover-overlay">
+                                    <button class="btn btn-lightbox" data-image="PLACEHOLDER_PROJECT_5_IMAGE.jpg"><i class="fa-solid fa-expand"></i> View Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Geographic Analysis</span>
+                                <h3 class="project-title">Digital Subsurface Elevation Modeling</h3>
+                                <p class="project-desc">Built regional-scale maps compiling deep reservoir structures and surface features in ArcGIS Pro, providing rich multi-layered insights into potential depositional basins.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">ArcGIS Pro</span>
+                                    <span class="tech-tag">Spatial Analyst</span>
+                                    <span class="tech-tag">Cartography</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="PLACEHOLDER_GITHUB_URL" class="btn-project-link" target="_blank"><i class="fa-brands fa-github"></i> Map Data</a>
+                                    <a href="#" class="btn-project-link disabled" onclick="return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> View Map</a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Project 6: Subsurface Structural Framework -->
+                        <div class="project-item card-glass reveal-slide-up" data-category="geophysics">
+                            <div class="project-img-wrapper">
+                                <img src="PLACEHOLDER_PROJECT_6_IMAGE.jpg" alt="3D Structural Modeling" class="project-img">
+                                <div class="project-hover-overlay">
+                                    <button class="btn btn-lightbox" data-image="PLACEHOLDER_PROJECT_6_IMAGE.jpg"><i class="fa-solid fa-expand"></i> View Detail</button>
+                                </div>
+                            </div>
+                            <div class="project-info">
+                                <span class="project-category">Reservoir Physics</span>
+                                <h3 class="project-title">Petrophysical Grid Modeling</h3>
+                                <p class="project-desc">Extracted acoustic impedance cubes and distributed reservoir property volumes (Porosity/Water Saturation) throughout calculated 3D geological grids, defining structural seals.</p>
+                                <div class="project-tech">
+                                    <span class="tech-tag">3D Petrophysics</span>
+                                    <span class="tech-tag">Property Modeling</span>
+                                    <span class="tech-tag">Kriging Interpolation</span>
+                                </div>
+                                <div class="project-links">
+                                    <a href="PLACEHOLDER_GITHUB_URL" class="btn-project-link" target="_blank"><i class="fa-brands fa-github"></i> Details</a>
+                                    <a href="#" class="btn-project-link disabled" onclick="return false;"><i class="fa-solid fa-arrow-up-right-from-square"></i> Model Cube</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lightbox Modal -->
+            <div id="lightbox-modal">
+                <span class="lightbox-close">&times;</span>
+                <img class="lightbox-img" id="lightbox-content-img" src="" alt="Enlarged View">
+                <div id="lightbox-caption">Project Visualization</div>
+            </div>
+
+            <!-- EXPERIENCE SECTION -->
+            <section id="experience" class="experience-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">05 / EXPERIENCE</span>
+                        <h2 class="section-title">Training & Internships</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="timeline-container">
+                        <div class="timeline-line"></div>
+
+                        <!-- Experience 1 -->
+                        <div class="timeline-item reveal-slide-up">
+                            <div class="timeline-dot-wrapper">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content card-glass">
+                                <span class="timeline-date">Upcoming / Present</span>
+                                <h3 class="timeline-title">Subsurface Training Program</h3>
+                                <h4 class="timeline-institution text-gradient">Petroleum Exploration Sector</h4>
+                                <p class="timeline-desc">
+                                    Undergoing specialized practical orientations exploring core structural geology workflows, handling commercial-grade seismic reflection profiles, and standard petrophysical software setups.
+                                </p>
+                                <ul class="exp-bullet-list">
+                                    <li>Analyzing physical logs to isolate primary sandstone reservoir zones.</li>
+                                    <li>Performing seismic-to-well matching workflows on regional exploratory data.</li>
+                                    <li>Engaging with expert subsurface geological structural mapping tutorials.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience 2 -->
+                        <div class="timeline-item reveal-slide-up" data-delay="0.1">
+                            <div class="timeline-dot-wrapper">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content card-glass">
+                                <span class="timeline-date">2024</span>
+                                <h3 class="timeline-title">Integrated Field Structural Geology Course</h3>
+                                <h4 class="timeline-institution text-gradient">University Field Training</h4>
+                                <p class="timeline-desc">
+                                    Conducted structural stratigraphic surveys in geologically complex outcrop environments. Evaluated primary tectonic fault configurations, dip angles, and facies variations.
+                                </p>
+                                <ul class="exp-bullet-list">
+                                    <li>Measured structural attitudes using geological Brunton compasses.</li>
+                                    <li>Drafted structural cross-sections matching physical outcrop profiles.</li>
+                                    <li>Interpreted regional tectonic evolution using visual rock data.</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <!-- Experience 3 -->
+                        <div class="timeline-item reveal-slide-up" data-delay="0.2">
+                            <div class="timeline-dot-wrapper">
+                                <div class="timeline-dot"></div>
+                            </div>
+                            <div class="timeline-content card-glass">
+                                <span class="timeline-date">2024</span>
+                                <h3 class="timeline-title">Computational Geophysics Research Workshop</h3>
+                                <h4 class="timeline-institution text-gradient">Al-Azhar University Geophysics Society</h4>
+                                <p class="timeline-desc">
+                                    Spearheaded student workflows analyzing data integrations within oil exploration pipelines. Presented core methodologies utilizing Python-based libraries for quantitative analysis.
+                                </p>
+                                <ul class="exp-bullet-list">
+                                    <li>Introduced students to scientific python libraries for log evaluation.</li>
+                                    <li>Maintained technical databases tracking geological correlation variables.</li>
+                                    <li>Synthesized and organized final presentation materials.</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- CERTIFICATES SECTION -->
+            <section id="certificates" class="certificates-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">06 / VALIDATION</span>
+                        <h2 class="section-title">Certifications & Credentials</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="certs-grid">
+                        
+                        <!-- Cert 1 -->
+                        <div class="cert-card card-glass reveal-slide-up" data-delay="0.1">
+                            <div class="cert-img-wrapper">
+                                <img src="PLACEHOLDER_CERT_1.jpg" alt="Petroleum Exploration and Production Certificate" class="cert-img">
+                                <div class="cert-overlay">
+                                    <button class="btn-cert-preview" data-image="PLACEHOLDER_CERT_1.jpg"><i class="fa-solid fa-eye"></i> Quick View</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">Petroleum Exploration Frameworks</h3>
+                                <span class="cert-issuer text-gradient">Industry Workshop / Affiliate</span>
+                                <span class="cert-date">Issued: 2024</span>
+                            </div>
+                        </div>
+
+                        <!-- Cert 2 -->
+                        <div class="cert-card card-glass reveal-slide-up" data-delay="0.2">
+                            <div class="cert-img-wrapper">
+                                <img src="PLACEHOLDER_CERT_2.jpg" alt="Machine Learning for Earth Science Cert" class="cert-img">
+                                <div class="cert-overlay">
+                                    <button class="btn-cert-preview" data-image="PLACEHOLDER_CERT_2.jpg"><i class="fa-solid fa-eye"></i> Quick View</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">Python and ML in Geoscience</h3>
+                                <span class="cert-issuer text-gradient">Scientific Computing Institution</span>
+                                <span class="cert-date">Issued: 2024</span>
+                            </div>
+                        </div>
+
+                        <!-- Cert 3 -->
+                        <div class="cert-card card-glass reveal-slide-up" data-delay="0.3">
+                            <div class="cert-img-wrapper">
+                                <img src="PLACEHOLDER_CERT_3.jpg" alt="ArcGIS Spatial Analytics Cert" class="cert-img">
+                                <div class="cert-overlay">
+                                    <button class="btn-cert-preview" data-image="PLACEHOLDER_CERT_3.jpg"><i class="fa-solid fa-eye"></i> Quick View</button>
+                                </div>
+                            </div>
+                            <div class="cert-info">
+                                <h3 class="cert-title">ArcGIS Spatial Mapping & Geostatistics</h3>
+                                <span class="cert-issuer text-gradient">GIS Specialists Academy</span>
+                                <span class="cert-date">Issued: 2023</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- TECH STACK SECTION -->
+            <section id="tech-stack" class="tech-stack-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">07 / TOOLKIT</span>
+                        <h2 class="section-title">My Tech Stack</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="stack-grid">
+                        
+                        <!-- Tool 1: Python -->
+                        <div class="stack-card card-glass reveal-slide-up" data-delay="0.1">
+                            <div class="stack-icon-wrapper"><i class="fa-brands fa-python"></i></div>
+                            <div class="stack-info">
+                                <h3 class="stack-name">Python</h3>
+                                <p class="stack-use">Seismic computation & scripting</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool 2: Petrel -->
+                        <div class="stack-card card-glass reveal-slide-up" data-delay="0.2">
+                            <div class="stack-icon-wrapper"><i class="fa-solid fa-layer-group"></i></div>
+                            <div class="stack-info">
+                                <h3 class="stack-name">Petrel</h3>
+                                <p class="stack-use">Subsurface 3D interpretation</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool 3: ArcGIS Pro -->
+                        <div class="stack-card card-glass reveal-slide-up" data-delay="0.3">
+                            <div class="stack-icon-wrapper"><i class="fa-solid fa-earth-africa"></i></div>
+                            <div class="stack-info">
+                                <h3 class="stack-name">ArcGIS Pro</h3>
+                                <p class="stack-use">GIS & geological spatial grids</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool 4: Pandas -->
+                        <div class="stack-card card-glass reveal-slide-up" data-delay="0.1">
+                            <div class="stack-icon-wrapper"><i class="fa-solid fa-table"></i></div>
+                            <div class="stack-info">
+                                <h3 class="stack-name">Pandas / NumPy</h3>
+                                <p class="stack-use">Log extraction & cleaning</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool 5: TensorFlow -->
+                        <div class="stack-card card-glass reveal-slide-up" data-delay="0.2">
+                            <div class="stack-icon-wrapper"><i class="fa-solid fa-network-wired"></i></div>
+                            <div class="stack-info">
+                                <h3 class="stack-name">TensorFlow</h3>
+                                <p class="stack-use">Deep learning facies classification</p>
+                            </div>
+                        </div>
+
+                        <!-- Tool 6: Excel -->
+                        <div class="stack-card card-glass reveal-slide-up" data-delay="0.3">
+                            <div class="stack-icon-wrapper"><i class="fa-regular fa-file-excel"></i></div>
+                            <div class="stack-info">
+                                <h3 class="stack-name">MS Excel</h3>
+                                <p class="stack-use">Quick analytical correlations</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- LEARNING JOURNEY -->
+            <section id="journey" class="journey-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">08 / PATHWAY</span>
+                        <h2 class="section-title">My Learning Journey</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="journey-horizontal">
+                        
+                        <!-- Step 1 -->
+                        <div class="journey-step reveal-slide-up" data-delay="0.1">
+                            <div class="step-num-wrap">
+                                <span class="step-num">01</span>
+                                <div class="step-line-after"></div>
+                            </div>
+                            <div class="step-card card-glass">
+                                <h3 class="step-title">Fundamentals & Core Science</h3>
+                                <p class="step-desc">Building strong core fundamentals in theoretical physics, sedimentary basins, mineralogy, and geological structural mechanics.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2 -->
+                        <div class="journey-step reveal-slide-up" data-delay="0.2">
+                            <div class="step-num-wrap">
+                                <span class="step-num">02</span>
+                                <div class="step-line-after"></div>
+                            </div>
+                            <div class="step-card card-glass">
+                                <h3 class="step-title">Applied Exploration & Programming</h3>
+                                <p class="step-desc">Mastering physical logging evaluation, structural seismic tie mechanisms, and deploying modern Python environments to process LAS parameters.</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3 -->
+                        <div class="journey-step reveal-slide-up" data-delay="0.3">
+                            <div class="step-num-wrap">
+                                <span class="step-num">03</span>
+                            </div>
+                            <div class="step-card card-glass">
+                                <h3 class="step-title">Next-Gen Integrated AI Exploration</h3>
+                                <p class="step-desc">Bridging geophysical workflows with ML regression modules and deep learning grids to optimize petroleum prospecting accuracy.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CAREER GOALS SECTION -->
+            <section id="career-goals" class="goals-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">09 / VISION</span>
+                        <h2 class="section-title">Career Milestones & Vision</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="goals-grid">
+                        
+                        <!-- Goal 1 -->
+                        <div class="goal-card card-glass reveal-slide-up">
+                            <div class="goal-number text-gradient">01</div>
+                            <h3 class="goal-title">Exploration Geophysicist</h3>
+                            <p class="goal-desc">Targeting a position within international energy enterprises to design seismic programs, manage reservoir models, and safely exploit deep subsurface assets.</p>
+                        </div>
+
+                        <!-- Goal 2 -->
+                        <div class="goal-card card-glass reveal-slide-up" data-delay="0.1">
+                            <div class="goal-number text-gradient">02</div>
+                            <h3 class="goal-title">Geoscience & AI Convergence</h3>
+                            <p class="goal-desc">Pioneering the application of custom automation scripts, neural networks, and computer vision models inside geological modeling suites to bypass outdated analytical pipelines.</p>
+                        </div>
+
+                        <!-- Goal 3 -->
+                        <div class="goal-card card-glass reveal-slide-up" data-delay="0.2">
+                            <div class="goal-number text-gradient">03</div>
+                            <h3 class="goal-title">Global Energy Innovation</h3>
+                            <p class="goal-desc">Contributing peer-reviewed seismic algorithms that integrate clean geothermal assessments, hydrogen reservoir setups, and sustainable subsurface exploration.</p>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- CONTACT SECTION -->
+            <section id="contact" class="contact-section section-padding">
+                <div class="container">
+                    <div class="section-header">
+                        <span class="section-tag font-grotesk">10 / INQUIRY</span>
+                        <h2 class="section-title">Get In Touch</h2>
+                        <div class="section-line"></div>
+                    </div>
+
+                    <div class="contact-grid">
+                        
+                        <!-- Contact Info Column -->
+                        <div class="contact-info-col reveal-slide-up">
+                            <h3 class="contact-subtitle text-gradient">Let's build the future of exploration.</h3>
+                            <p class="contact-text">
+                                Interested in academic collaboration, internships, project discussion, or computational geophysics? Reach out via the secure portal, WhatsApp, or standard direct messaging channels.
+                            </p>
+
+                            <div class="info-list">
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                                    <div class="info-details">
+                                        <span class="info-label">Current Location</span>
+                                        <span class="info-val">PLACEHOLDER_LOCATION (Cairo, Egypt)</span>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                                    <div class="info-details">
+                                        <span class="info-label">Direct Email</span>
+                                        <a href="mailto:PLACEHOLDER_EMAIL@gmail.com" class="info-val link-hover">PLACEHOLDER_EMAIL@gmail.com</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-brands fa-whatsapp"></i></div>
+                                    <div class="info-details">
+                                        <span class="info-label">WhatsApp</span>
+                                        <a href="PLACEHOLDER_WHATSAPP_URL" class="info-val link-hover" target="_blank">PLACEHOLDER_WHATSAPP_NUMBER</a>
+                                    </div>
+                                </div>
+
+                                <div class="info-item">
+                                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                                    <div class="info-details">
+                                        <span class="info-label">Phone Direct</span>
+                                        <span class="info-val">PLACEHOLDER_PHONE_NUMBER</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Contact Form Column -->
+                        <div class="contact-form-col reveal-slide-up" data-delay="0.1">
+                            <form id="portfolio-contact-form" class="card-glass">
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="form-name">Your Name</label>
+                                        <input type="text" id="form-name" placeholder="John Doe" required>
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="form-email">Your Email</label>
+                                        <input type="email" id="form-email" placeholder="john@example.com" required>
+                                    </div>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" placeholder="Subsurface Research Partnership" required>
+                                </div>
+
+                                <div class="form-group">
+                                    <label for="form-message">Message Details</label>
+                                    <textarea id="form-message" rows="6" placeholder="Hi Ibrahim, I would like to invite you for an interview..." required></textarea>
+                                </div>
+
+                                <button type="submit" class="btn btn-primary btn-submit" data-magnetic>
+                                    Send Transmission <i class="fa-solid fa-paper-plane"></i>
+                                </button>
+                                
+                                <div id="form-feedback" class="form-status"></div>
+                            </form>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="container footer-container">
+                    <div class="footer-top">
+                        <div class="footer-brand">
+                            <span class="text-gradient">IBRAHIM MABROUK</span>
+                            <p class="footer-motto">Bridging traditional geoscience with state-of-the-art computational workflows.</p>
+                        </div>
+                        <button class="btn btn-back-top" onclick="window.scrollTo({top:0, behavior:'smooth'})" data-magnetic>
+                            Back To Top <i class="fa-solid fa-arrow-up"></i>
+                        </button>
+                    </div>
+
+                    <div class="footer-divider"></div>
+
+                    <div class="footer-bottom">
+                        <span class="copyright">&copy; 2026 Ibrahim Mabrouk. Developed with pure code.</span>
+                        <div class="footer-socials">
+                            <a href="PLACEHOLDER_LINKEDIN_URL" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+                            <a href="PLACEHOLDER_GITHUB_URL" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+                            <a href="PLACEHOLDER_WHATSAPP_URL" target="_blank" title="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href="mailto:PLACEHOLDER_EMAIL@gmail.com" title="Email"><i class="fa-regular fa-envelope"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+
+        </div>
+    </main>
+
+    <!-- External Animation Frameworks (GSAP + ScrollTrigger + Lenis) -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.34/dist/lenis.min.js"></script>
+
+    <!-- Custom Application Script -->
+    <script src="app.js"></script>
+</body>
+</html>
